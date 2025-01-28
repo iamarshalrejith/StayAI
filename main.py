@@ -9,18 +9,16 @@ from backend.app.api import app
 if __name__ == "__main__":
     uvicorn.run(app, host="0.0.0.0", port=8000)
     
-    
-    
     # add_pdf_to_chroma(
-    #     pdf_path="/Users/arkajitdatta/Documents/projects/springboard/embedding/pdfs/jaipur_wiki.pdf"
+    #     pdf_path=r"C:\Users\ramco\Downloads\ladakh.pdf"
     # )
-    # chat_with_travel_assistant()
+    chat_with_travel_assistant()
     
-    # tool = BrowserTool()
-    # results = tool.search("Give me some information about places to visit in Jaipur")
-    # snippets = tool.get_snippets_from_search_results(results)
-    # summary = tool.summarize_snippets(snippets)
-    # print(summary)
+    tool = BrowserTool()
+    results = tool.search("Give me some information about places to visit in Jaipur")
+    snippets = tool.get_snippets_from_search_results(results)
+    summary = tool.summarize_snippets(snippets)
+    print(summary)
     
-    # agent = BrowserAgent()
-    # agent.run("Make an plan for a 10 days trip to Bangalore")
+    agent = BrowserAgent()
+    agent.run("Make an plan for a 10 days trip to Bangalore")

@@ -109,6 +109,22 @@ class Tool:
     def execute(self, input):
         pass
 
+class ThinkingTool(Tool):
+     def __init__(self):
+         super().__init__("thinkingtool","This is a tool to think")
+     
+     def execute(self, input):
+        Thinking_prompt = """You re expert in generating search queries similar to the user queries
+          You need to think and generate list of appropriate search queries 
+          For example {queries:['query1','query2','query3']} 
+           NOTE: Generate maximum of 5 search queries"""
+        user_prompt = f"User query: {input.get('query')}"
+        
+        response = llm.generate_response(messages=[{"role": "system", "content": Thinking_prompt}, {"role": "user", "content": user_prompt}])
+        response = pre_process_the_json_response(response)
+        
+        return response
+
 
 class ThinkingTool(Tool):
     def __init__(self):
