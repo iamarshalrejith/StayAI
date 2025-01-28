@@ -6,6 +6,10 @@ An intelligent assistant for hospitality services, powered by AI Agents and mode
 
 StayAI is designed to enhance the hospitality experience by providing automated, intelligent assistance for both guests and service providers. It leverages advanced AI technologies to deliver personalized support and streamline operations.
 
+## About
+
+StayAI is a cutting-edge platform that integrates AI-driven solutions to transform the hospitality industry. With StayAI, guests receive personalized recommendations, real-time assistance, and smooth interactions, while service providers gain valuable insights into customer preferences and can efficiently manage requests. By utilizing powerful AI agents, StayAI enhances service coordination and automates routine tasks, allowing hospitality businesses to focus on providing high-quality, customer-centric services.
+
 ## Features
 
 - 🤖 AI-powered guest assistance
@@ -24,7 +28,7 @@ StayAI is designed to enhance the hospitality experience by providing automated,
 2. Clone the repository
 
 ```bash
-git clone <your-forked-repo-url>
+git clone https://github.com/iamarshalrejith/StayAI
 ```
 
 3. Install the dependencies
@@ -98,3 +102,33 @@ NOTE: Make sure you have both the streamlit app and the FastAPI server running.
 - ChromaDB
 - Mem0AI
 - Groq
+
+## Dependencies
+
+Make sure you have the following installed in your environment:
+
+- streamlit
+- fastapi
+- crewai
+- langchain
+- langchain-community
+- langchain-text-splitters
+- chromadb
+- mem0ai
+- groq
+
+These are listed in requirements.txt and can be installed via pip install -r requirements.txt.
+
+## Contributing
+We welcome contributions! If you'd like to contribute, please follow these steps:
+
+1) Fork the repository.
+2) Create a new branch (git checkout -b feature-name).
+3) Make your changes and commit them (git commit -am 'Add new feature').
+4) Push to your fork (git push origin feature-name).
+5) Create a new Pull Request.
+
+Please make sure to follow the coding style used in the project and write tests for your contributions.
+
+## License
+This project is licensed under the MIT License - see the LICENSE file for details.
