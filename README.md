@@ -131,4 +131,5 @@ We welcome contributions! If you'd like to contribute, please follow these steps
 Please make sure to follow the coding style used in the project and write tests for your contributions.
 
 ## License
-This project is licensed under the MIT License - see the LICENSE file for details.
+
+This project is licensed under the MIT License - see the [LICENSE.txt](./LICENSE.txt) file for details.
