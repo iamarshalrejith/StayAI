@@ -132,4 +132,4 @@ Please make sure to follow the coding style used in the project and write tests 
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.txt](./LICENSE.txt) file for details.
+This project is licensed under the MIT License - see the [LICENSE](./LICENSE.txt) file for details.
